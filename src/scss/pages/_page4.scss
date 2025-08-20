@@ -1,0 +1,83 @@
+@use 'sass:map';
+@use 'sass:math';
+
+@use '../utils/variables' as *;
+@use '../utils/functions' as *;
+@use '../utils/mixins' as *;
+
+
+.page-4{
+    .content{
+        padding-top: 160px;
+    }
+}
+.page-4{
+    .item2{
+      position: relative;
+    }
+    .gh-img{
+        position: absolute;
+        top: 423px;
+        left: 480px;
+        width: 0;
+        overflow: hidden;
+        transition: all 3s 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+
+        .imgover{
+            width: 1497px;
+            position: relative;
+        }
+    }
+    .gh-img2{
+        position: absolute;
+        top: 1380px;
+        left: 480px;
+        width: 0;
+        overflow: hidden;
+        transition: all 3s 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+        .imgover{
+            width: 1497px;
+            position: relative;
+        }
+    }
+    .switch{
+        position: absolute;
+        top: 366px;
+        right: 142px;
+        opacity: 0;
+    }
+    .switch2{
+      position: absolute;
+      top: 1310px;
+      right: 142px;
+      opacity: 0;
+    }
+    
+  }
+  
+  .swiper-slide-active{
+    .page-4{
+      .gh-img,
+      .gh-img2{
+        width: 1497px;
+      }
+      .bar-cont1 .bars{height: 320px;}
+      .bar-cont2 .bars{height: 354px;}
+      .bar-cont3 .bars{height: 346px;}
+      .bar-cont4 .bars{height: 370px;}
+      .bar-cont5 .bars{height: 395px;}
+      .bar-cont6 .bars{height: 368px;}
+      .bar-cont7 .bars{height: 420px;}
+      .numbs{opacity: 1;
+        transform: translateY(0);
+      }
+      .switch{
+        opacity: 1;
+        transition: all 1s 1.5s cubic-bezier(0.33, 1, 0.68, 1);
+      }
+      .switch2{
+        opacity: 1;
+        transition: all 1s 1.5s cubic-bezier(0.33, 1, 0.68, 1);
+      }
+    }
+  }

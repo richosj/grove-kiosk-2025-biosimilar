@@ -72,3 +72,26 @@
       }
     }
   }
+
+
+
+
+.page-3 {
+  .p-title {top:123px;left:108px}
+  .cont1 {top:381px;left:83px}
+  .cont2 {top:1095px;left:90px}
+  .cont3 {top:2058px;left:90px}
+  .dot {position:absolute;bottom:94px;left:973px}
+  
+}
+
+.swiper-slide-active{
+  .page-3 {
+    .ani-default {
+      &.p-title {transform: translateY(0px);opacity: 1;}
+      &.cont1 {transform: translateY(0px);opacity: 1;transition-delay: 0.2s;}
+      &.cont2 {transform: translateY(0px);opacity: 1;transition-delay: 0.4s;}
+      &.cont3 {transform: translateY(0px);opacity: 1;transition-delay: 0.6s;}
+    } 
+  }
+}

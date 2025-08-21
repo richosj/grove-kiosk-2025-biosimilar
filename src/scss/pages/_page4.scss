@@ -81,3 +81,27 @@
       }
     }
   }
+
+
+
+
+
+.page-4 {
+  .p-title {top:167px;left:108px}
+  .cont1 {top:348px;left:91px}
+  .cont2 {top:775px;left:91px}
+  .cont3 {top:2377px;left:88px}
+  .dot {position:absolute;bottom:94px;left:973px}
+  
+}
+
+.swiper-slide-active{
+  .page-4 {
+    .ani-default {
+      &.p-title {transform: translateY(0px);opacity: 1;}
+      &.cont1 {transform: translateY(0px);opacity: 1;transition-delay: 0.2s;}
+      &.cont2 {transform: translateY(0px);opacity: 1;transition-delay: 0.4s;}
+      &.cont3 {transform: translateY(0px);opacity: 1;transition-delay: 0.6s;}
+    } 
+  }
+}

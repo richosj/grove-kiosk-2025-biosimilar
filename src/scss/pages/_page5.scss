@@ -75,3 +75,26 @@
       }
     }
   }
+
+
+.page-5 {
+  .p-title {top:169px;left:109px}
+  .cont1 {top:380px;left:91px}
+  .cont2 {top:1985px;left:178px}
+  .cont3 {top:2377px;left:88px}
+  .dot {position:absolute;bottom:94px;left:973px}
+
+
+  .ani-default.cont2 {transform: translateY(-100px);transition: all 0.75s;}
+}
+
+.swiper-slide-active{
+  .page-5 {
+    .ani-default {
+      &.p-title {transform: translateY(0px);opacity: 1;}
+      &.cont1 {transform: translateY(0px);opacity: 1;transition-delay: 0.2s;}
+      &.cont2 {transform: translateX(0px);opacity: 1;transition-delay: 1.3s;}
+      &.cont3 {transform: translateY(0px);opacity: 1;transition-delay: 0.6s;}
+    } 
+  }
+}

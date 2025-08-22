@@ -913,6 +913,15 @@ body.stage-11 .img-footer-txt2 {
   display: block;
 }
 
+.btn-moveto {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 625px;
+  height: 306px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 41% 62%);
+}
+
 .sr-only {
   position: absolute;
   z-index: -1;

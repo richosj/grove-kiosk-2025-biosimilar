@@ -206,6 +206,12 @@
             circle.style.webkitAnimation = 'none';
         }
 
+        document.querySelectorAll('.btn-moveto').forEach(element => {
+            element.addEventListener('click', () => {
+                swiper.slideTo(element.dataset.move - 1);
+            });
+        });
+
         document.querySelectorAll('.g2').forEach(element => {
             element.addEventListener('click', () => {
                 swiper.slideTo(2);
